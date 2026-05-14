@@ -7,7 +7,7 @@
 
 body {
     background-color: white;
-    color: darkgreen;
+    color: #340064;
 }
 * {
     margin: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-color: darkgreen;
+    background-color: rgb(4, 126, 4);
     color: #0b0c0b;
 }
 .navbar {
