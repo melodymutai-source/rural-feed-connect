@@ -39,12 +39,15 @@ function showFinalOrder() {
 
     let subtotal = 0;
     currentCart.forEach(item => { subtotal += item.price;
+    });
+
     const grandTotal = subtotal + deliveryFee;
 
-        const landmark = prompt(Subtotal: Ksh ${subtotal.toLocaleString()}\nDelivery Fee: Ksh ${deliveryFee}\nTotal: Ksh ${grandTotal.toLocaleString()}\n\nEnter delivery landmark:);
+    const message = "Subtotal: " + subtotal + " | Total: " + grandTotal + "\n\nEnter delivery landmark:";
+    const landmark = prompt(message);
 
     if (landmark) {
-        alert(Order confirmed for delivery near ${landmark}.);
+        alert("Order confirmed for delivery near " + landmark);
     }
 }
 
