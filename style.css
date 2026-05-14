@@ -51,6 +51,19 @@ body {
     padding: 40px 5%;
 }
 
+.product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+
+
+
 
 
 
