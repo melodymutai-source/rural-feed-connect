@@ -67,6 +67,28 @@ body {
     object-fit: cover;
 }
 
+.price {
+    font-size: 1.4rem;
+    color: darkgreen;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #409167;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-to-cart:hover {
+    background-color: darkgreen;
+}
+
+
 
 
 
