@@ -13,5 +13,20 @@ function handleAddToCart(event) {
     const card = event.target.closest('.product-card');
     const name = card.querySelector('h3').innerText;
     const priceText = card.querySelector('.price').innerText;
-    
 
+
+        const price = parseInt(priceText.replace);
+    
+        currentCart.push({ name, price });
+
+    const originalBtnText = event.target.innerText;
+    event.target.innerText = "Added ✓";
+    event.target.style.background = "#1b4332"; 
+    event.target.disabled = true;
+
+    setTimeout(() => {
+        event.target.innerText = originalBtnText;
+        event.target.style.background = "#2d6a4f";
+        event.target.disabled = false;
+    }, 1500);
+}
