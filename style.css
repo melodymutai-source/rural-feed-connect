@@ -9,4 +9,28 @@ body {
     background-color: white;
     color: darkgreen;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: darkgreen;
+    color: #2e3d2e;
+}
+.navbar {
+    background: forestgreen;
+        color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+
+
+
+
 
