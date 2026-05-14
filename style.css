@@ -18,7 +18,7 @@ body {
 
 body {
     background-color: darkgreen;
-    color: #2e3d2e;
+    color: #0b0c0b;
 }
 .navbar {
     background: forestgreen;
@@ -87,7 +87,10 @@ body {
 .add-to-cart:hover {
     background-color: darkgreen;
 }
-
+.order-link {
+    color: white;
+    font-weight:bold;
+}
 
 
 
