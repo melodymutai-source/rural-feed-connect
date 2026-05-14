@@ -30,22 +30,20 @@ function handleAddToCart(event) {
         event.target.disabled = false;
     }, 1500);
 }
-
 function showFinalOrder() {
-    if (currentCart.length === 0) {
-        alert("Please add items to the order first!");
+
+        let subtotal = 0;
+    currentCart.forEach(item => subtotal += item.price);
+    const grandTotal = subtotal + deliveryFee;
+    const landmarkInput = document.querySelector('textarea').value;
+
+    if (!landmarkInput) {
+        alert("Please enter a landmark so our drivers can find you!");
         return;
     }
 
-    let subtotal = 0;
-    currentCart.forEach(item => { subtotal += item.price;
-    const grandTotal = subtotal + deliveryFee;
-
-    const message = "Subtotal: " + subtotal + " | Total: " + grandTotal + "\n\nEnter delivery landmark:";
-    const landmark = prompt(message);
-
-    if (landmark) {
-        alert("Order confirmed for delivery near " + landmark);
-    }
+        const summary = "Order Total: Ksh " + grandTotal.toLocaleString() + "\nDelivery to: " + landmarkInput;
+    alert("Confirming Rural Feed Connect Order:\n\n" + summary);
 }
+
 
