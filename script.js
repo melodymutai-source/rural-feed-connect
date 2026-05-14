@@ -15,7 +15,7 @@ function handleAddToCart(event) {
     const priceText = card.querySelector('.price').innerText;
 
 
-        const price = parseInt(priceText.replace);
+        const price = Number(priceText.replace(/\D/g, ''));
     
         currentCart.push({ name, price });
 
