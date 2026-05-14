@@ -46,4 +46,13 @@ function showFinalOrder() {
     alert("Confirming Rural Feed Connect Order:\n\n" + summary);
 }
 
+    const proceedToPay = confirm("Total amount: Ksh " + grandTotal.toLocaleString() + "\n\nWould you like to initiate M-Pesa payment?");
+
+    if (proceedToPay) {
+        alert("M-Pesa STK Push sent to your phone. Please enter your PIN to complete the order for " + landmarkInput);
+    } else {
+        alert("Payment cancelled. Your items are still in the cart.");
+    }
+
+
 
