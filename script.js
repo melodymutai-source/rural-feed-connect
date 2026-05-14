@@ -39,8 +39,6 @@ function showFinalOrder() {
 
     let subtotal = 0;
     currentCart.forEach(item => { subtotal += item.price;
-    });
-
     const grandTotal = subtotal + deliveryFee;
 
     const message = "Subtotal: " + subtotal + " | Total: " + grandTotal + "\n\nEnter delivery landmark:";
