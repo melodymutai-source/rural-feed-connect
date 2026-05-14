@@ -30,3 +30,14 @@ function handleAddToCart(event) {
         event.target.disabled = false;
     }, 1500);
 }
+
+function showFinalOrder() {
+    if (currentCart.length === 0) {
+        alert("Please add items to the order first!");
+        return;
+    }
+
+    let subtotal = 0;
+    currentCart.forEach(item => subtotal += item.price);
+    const grandTotal = subtotal + deliveryFee;
+
