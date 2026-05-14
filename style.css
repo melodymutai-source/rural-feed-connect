@@ -93,6 +93,16 @@ body {
 }
 
 
+input[type="text"], 
+input[type="tel"], 
+select, 
+textarea {
+    padding: 12px;
+    margin-bottom: 15px; 
+    border-radius: 8px;   
+    width:50%
+}       
+
 
 
 
