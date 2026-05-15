@@ -33,8 +33,9 @@ function handleAddToCart(event) {
 function showFinalOrder() {
 
         let subtotal = 0;
+        let grandtotal = 0;
     currentCart.forEach(item => subtotal += item.price);
-    const grandTotal = subtotal + deliveryFee;
+    grandTotal = subtotal + deliveryFee;
     const landmarkInput = document.querySelector('textarea').value;
 
     if (!landmarkInput) {
